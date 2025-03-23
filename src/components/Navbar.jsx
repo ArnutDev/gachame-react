@@ -3,14 +3,25 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <nav className="bg-gray-900 p-4">
-            <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-                <Link to="/">GachaMe</Link>
-                <ul className="flex space-x-6">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/update">Update</Link></li>
-                </ul>
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div className="container">
+                <Link to="/" className="navbar-brand">GachaMe</Link>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar1" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2">
+                            <li><Link to="/">Home</Link></li>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <li><Link to="/about">About</Link></li>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <li><Link to="/update">Update</Link></li>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     );
