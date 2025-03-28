@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Navbar />
+                <Nav />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     {/* link หน้าเพิ่มเติม */}
