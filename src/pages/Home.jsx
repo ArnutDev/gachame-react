@@ -10,10 +10,10 @@ function Home() {
                 <div className="container mt-4">
                     <div className="row">
                         <div className="col-md-6 mb-5">
-                            <Card />
+                            <Card value="intro-ranger-banner.jpg" />
                         </div>
                         <div className="col-md-6 mb-5">
-                            <Card />
+                            <Card value="intro-gear-banner.jpg" />
                         </div>
                     </div>
                 </div>
